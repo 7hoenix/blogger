@@ -1,0 +1,5 @@
+<% @tags.each do |tag| %>
+  <%= tag.name %>
+  <%= link_to "delete me", tag_path(tag), method: :delete %>
+<% end %>
+
